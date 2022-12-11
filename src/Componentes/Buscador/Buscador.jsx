@@ -14,7 +14,7 @@ const Buscador = ({ onBuscar }) => {
     >
       <InputBase
         sx= {{ ml: 1, flex: 1 }}
-        placeholder="Buscar noticia ingresando 3 o más caracteres"
+        placeholder="Ingrese 3 o más caracteres para buscar"
         inputProps={{ 'aria-label': 'search google maps' }}
         value={criterioBusqueda}
         role="searchbox"

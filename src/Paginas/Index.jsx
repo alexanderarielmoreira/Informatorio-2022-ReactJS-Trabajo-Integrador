@@ -22,7 +22,7 @@ const Index = () => {
 
     const buscarNoticias = async (pagina) => {
         setIsLoading(true);        
-        const {Search: articles, totalResults} = await getListadoNoticias(searchParams.get('query'), pagina);
+        const {Search: _status, articles, totalResults} = await getListadoNoticias(searchParams.get('query'), pagina);
         setNoticias(articles);
         setTotalResultado(totalResults)
         setHayResultado(Boolean(totalResults))
@@ -54,7 +54,7 @@ const Index = () => {
                 { noticias && hayResultado && <h3>Está viendo hasta 10 noticias de {totalResultado} resultados.</h3> }
                 { noticias && <ListaNoticias noticias={noticias} /> }
                 <div id='busqueda'>{ noticias && <Paginator cantidadPaginas={cantidadPaginas} onChange={onCambioPagina} /> }</div>
-            </Container>
+            </Container> 
             { !hayResultado && <Footer />}
         </div>
     )

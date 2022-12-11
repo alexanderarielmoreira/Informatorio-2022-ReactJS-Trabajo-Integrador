@@ -1,2 +1,2 @@
 export const DEFAULT_IMAGE = '../Imagenes/recursoNoEncontrado.JPG';
-export const LOGO = '../Imagenes/logo.jpg';  
+export const LOGO = 'https://www.foromedios.com/uploads/monthly_2020_11/large_lun._2_11_2020_03_19_14.png.7fed85b7cc6e9b2d2f8f90b7b169a0fd.png'; 

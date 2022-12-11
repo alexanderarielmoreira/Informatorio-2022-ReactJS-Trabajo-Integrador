@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
             <footer>
-                <h5> Alexander Ariel Moreira - DNI 36.197.352 | Copyright 2022 </h5>
-            </footer>
+                <h4 className="FooterText"> Alexander Ariel Moreira - DNI 36.197.352 | Copyright 2022 </h4>
+            </footer> 
     )
 };
 
