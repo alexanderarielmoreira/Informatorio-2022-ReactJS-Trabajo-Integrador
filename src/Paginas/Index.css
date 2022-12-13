@@ -1,0 +1,23 @@
+.Buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.NoResults,
+.TotalResults {
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.Spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

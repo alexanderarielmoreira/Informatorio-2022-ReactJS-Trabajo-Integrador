@@ -1,3 +1,4 @@
+import './Index.css'; 
 import { Container } from "@mui/material";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -48,14 +49,14 @@ const Index = () => {
         <div>
             <Header />
             <Container maxWidth='sm'>
-                <div id='busqueda'><Buscador onBuscar={onBuscar}/></div>
-                { isLoading && <Spinner /> }
-                { !isLoading && noticias && !hayResultado && <div><h3>No se encontró nada relacionado con "{searchParams.get('query')}".</h3></div> }
-                { noticias && hayResultado && <h3>Está viendo hasta 10 noticias de {totalResultado} resultados.</h3> }
+                <div className="Buscador"><Buscador onBuscar={onBuscar}/></div> 
+                <div className='Spinner'> { isLoading && <Spinner /> } </div> 
+                { !isLoading && noticias && !hayResultado && <div><h3 className='NoResults'>No se encontró nada relacionado con "{searchParams.get('query')}".</h3></div> }
+                { noticias && hayResultado && <h3 className='TotalResults'>Está viendo hasta 10 noticias de {totalResultado} resultados.</h3> }
                 { noticias && <ListaNoticias noticias={noticias} /> }
-                <div id='busqueda'>{ noticias && <Paginator cantidadPaginas={cantidadPaginas} onChange={onCambioPagina} /> }</div>
+                <div className="Buscador">{ noticias && <Paginator cantidadPaginas={cantidadPaginas} onChange={onCambioPagina} /> }</div>
             </Container> 
-            { !hayResultado && <Footer />}
+            { !hayResultado && <Footer />} 
         </div>
     )
 };

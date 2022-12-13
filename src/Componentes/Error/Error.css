@@ -1,5 +1,18 @@
+.ErrorContainer {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 28%;
+}
+
 .ErrorMessage  {
-    margin-top: 150px;
-    color: blueviolet;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-bottom: 25px;
+   text-align: center;
+   font-family: sans-serif;
+   border: 1px solid black;
+   border-radius: 3px;
+   background-color: #00aae4;
 }
 
