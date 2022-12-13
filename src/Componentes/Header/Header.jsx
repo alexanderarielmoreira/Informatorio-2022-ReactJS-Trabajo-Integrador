@@ -1,3 +1,4 @@
+import './Header.css';
 import { LOGO } from '../../Libs/constantes';
 
 const Header = () => {
