@@ -42,7 +42,7 @@ const Index = () => {
     };
 
     const onCambioPagina = (pagina) => {
-        setPagina(pagina);
+        setPagina(pagina); 
     }
 
     return (
@@ -51,7 +51,7 @@ const Index = () => {
             <Container maxWidth='sm'>
                 <div className="Buscador"><Buscador onBuscar={onBuscar}/></div> 
                 <div className='Spinner'> { isLoading && <Spinner /> } </div> 
-                { !isLoading && noticias && !hayResultado && <div><h3 className='NoResults'>No se encontró nada relacionado con "{searchParams.get('query')}".</h3></div> }
+                { !isLoading && noticias && !hayResultado && <div><h3 className='NoResults'> No hay resultados para la búsqueda vinculada con "{searchParams.get('query')}".</h3></div> }
                 { noticias && hayResultado && <h3 className='TotalResults'>Está viendo hasta 10 noticias de {totalResultado} resultados.</h3> }
                 { noticias && <ListaNoticias noticias={noticias} /> }
                 <div className="Buscador">{ noticias && <Paginator cantidadPaginas={cantidadPaginas} onChange={onCambioPagina} /> }</div>
