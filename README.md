@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### TRABAJO FINAL CORRESPONDIENTE A LA EDICIÓN 2022 DEL INFORMATORIO DE LA PROVINCIA DEL CHACO;
+
+Consistente en el diseño y codificación utilizando React JS, de un "buscador de noticias" que se conecta a una API y si el usuario ingresa más de tres (3) caracteres, este realiza dicha búsqueda.
